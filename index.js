@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer';
 import { exec } from 'child_process'
-import fetch from 'node-fetch';
 import { senMailAboutKungFuPanda$, mailOptions } from './entities/sendEmail.js';
 async function ghalatia$() {
   return await new Promise((resolve, reject) => {

@@ -42,13 +42,13 @@ async function checkAvailibility$() {
       }
     }
 
-    let sakitxavi = Boolean(the_container.indexOf("კუნგ ფუ პანდა 4") != -1);
+    let sakitxavi = Boolean(the_container.indexOf("გოძილა x კონგი: ახალი იმპერია") != -1);
     // let sakitxavi = Boolean(the_container.indexOf("დიუნი") != -1);
     console.log(sakitxavi);
     if (sakitxavi) {
       return Promise.all([senMailAboutKungFuPanda$({
         ...mailOptions,
-        html: `<a href="https://kinoafisha.ge">Kinoafisha, <b>!!!!!!კუნგ ფუ პანდაააა!!!!!!</b> </a>`
+        html: `<a href="https://kinoafisha.ge">Kinoafisha, <b>!!!!!!გოძილა x კონგი: ახალი იმპერია!!!!!!</b> </a>`
       }), ghalatia$()]).then(() => 'nw');
     } else {
       console.log("checked\n\n");
